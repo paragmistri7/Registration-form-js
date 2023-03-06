@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header h1 {
+    text-align: center;
+}
+
+.center_div {
+    border: 1px solid black;
+    margin: 50px auto;
+    padding: 25px;
+    width: calc(100% - 70%);
+}
+
+.form_control {
+    margin: 10px;
+    position: relative;
+}
+
+.form_control i {
+    position: absolute;
+    right: 21px;
+    bottom: 25px;
+    visibility: hidden;
+}
+
+.form_control input {
+    width: calc(100% - 2%);
+    padding: 7px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form_control input:focus {
+    outline: none;
+    border: 2px solid yellow;
+}
+
+.form_control label {
+    font-size: 18px;
+    display: block;
+}
+
+
+
+
+.form_control small {
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form_control.success input {
+    border-color: green;
+}
+.form_control.error input {
+    border-color: red;
+}
+
+.form_control.success i.fa-circle-check {
+color: green;
+visibility: visible;
+}
+
+.form_control.error i.fa-circle-exclamation {
+color: red;
+visibility: visible;
+}
+
+.form_control.error small {
+    visibility: visible;
+}
